@@ -91,4 +91,4 @@ with ask_us_tab:
         for char in answer_text:
             typed += char
             placeholder.success(f"💬 {typed}")
-            time.sleep(0.09)
+            time.sleep(0.02)
