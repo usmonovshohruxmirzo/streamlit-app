@@ -31,3 +31,9 @@ with overview_tab:
         "Satisfaction": [80, 85, 88, 90, 95]
     }
     st.area_chart(satisfaction_data, x="Year", y="Satisfaction")
+
+with working_hours_tab:
+    st.header("⏰ Working Hours")
+    st.info("**Monday to Friday:** 9 AM – 6 PM")
+    st.info("**Saturday:** 10 AM – 4 PM ")
+    st.info("**Sunday:** Closed")
