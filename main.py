@@ -42,3 +42,9 @@ with location_tab:
     st.header("📍 Location")
     st.map({"lat": [41.2995], "lon": [69.2401]})
     st.success("Uzbekistan, Tashkent")
+
+with contact_tab:
+    st.header("📞 Contact Information")
+    st.success("**Phone:** +998 91 339 44 54")
+    st.warning("**Email:** shokhrukhmirzo_usmonov@student.itpu.uz")
+    st.info("**Address:** Tashkent, Uzbekistan")
