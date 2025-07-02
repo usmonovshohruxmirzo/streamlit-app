@@ -68,16 +68,27 @@ with ask_us_tab:
 
         q_lower = question.lower()
 
+        placeholder = st.empty()
+        answer_text = ""
+
         if "hour" in q_lower or "time" in q_lower:
-            st.success(default_answers["hours"])
+            answer_text = default_answers["hours"]
         elif "location" in q_lower or "where" in q_lower:
-            st.success(default_answers["location"])
+            answer_text = default_answers["location"]
         elif "phone" in q_lower or "call" in q_lower:
-            st.success(default_answers["phone"])
+            answer_text = default_answers["phone"]
         elif "email" in q_lower or "mail" in q_lower:
-            st.success(default_answers["email"])
+            answer_text = default_answers["email"]
         elif "contact" in q_lower:
-            st.success(default_answers["contact"])
+            answer_text = default_answers["contact"]
         else:
             st.warning("❌ Sorry, we don't have an exact answer for that at the moment.")
             st.markdown("[🚨 Raise a support ticket here (GitHub Issues)](https://github.com/yourusername/yourrepo/issues/new)", unsafe_allow_html=True)
+            st.stop()
+
+        typed = ""
+
+        for char in answer_text:
+            typed += char
+            placeholder.success(f"`💬 {typed}")
+            time.sleep(0.09)
