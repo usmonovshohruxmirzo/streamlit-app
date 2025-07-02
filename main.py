@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 st.set_page_config(page_title="Business Info", page_icon="💼", layout="wide")
 
@@ -48,3 +49,35 @@ with contact_tab:
     st.success("**Phone:** +998 91 339 44 54")
     st.warning("**Email:** shokhrukhmirzo_usmonov@student.itpu.uz")
     st.info("**Address:** Tashkent, Uzbekistan")
+
+with ask_us_tab:
+    st.header("💬 Ask a Question")
+    question = st.text_area("Type your question here:")
+
+    default_answers = {
+        "hours": "Our working hours are Monday to Friday: 9 AM – 6 PM, Saturday: 10 AM – 4 PM, Sunday: Closed.",
+        "location": "We are located in Tashkent, Uzbekistan.",
+        "phone": "You can call us at +998 91 339 44 54.",
+        "email": "You can email us at shokhrukhmirzo_usmonov@student.itpu.uz.",
+        "contact": "Phone: +998 91 339 44 54, Email: shokhrukhmirzo_usmonov@student.itpu.uz."
+    }
+
+    if st.button("Submit Question"):
+        with st.spinner("Checking for an answer..."):
+            time.sleep(2)
+
+        q_lower = question.lower()
+
+        if "hour" in q_lower or "time" in q_lower:
+            st.success(default_answers["hours"])
+        elif "location" in q_lower or "where" in q_lower:
+            st.success(default_answers["location"])
+        elif "phone" in q_lower or "call" in q_lower:
+            st.success(default_answers["phone"])
+        elif "email" in q_lower or "mail" in q_lower:
+            st.success(default_answers["email"])
+        elif "contact" in q_lower:
+            st.success(default_answers["contact"])
+        else:
+            st.warning("❌ Sorry, we don't have an exact answer for that at the moment.")
+            st.markdown("[🚨 Raise a support ticket here (GitHub Issues)](https://github.com/yourusername/yourrepo/issues/new)", unsafe_allow_html=True)
