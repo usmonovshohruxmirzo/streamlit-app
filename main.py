@@ -37,3 +37,8 @@ with working_hours_tab:
     st.info("**Monday to Friday:** 9 AM – 6 PM")
     st.info("**Saturday:** 10 AM – 4 PM ")
     st.info("**Sunday:** Closed")
+
+with location_tab:
+    st.header("📍 Location")
+    st.map({"lat": [41.2995], "lon": [69.2401]})
+    st.success("Uzbekistan, Tashkent")
