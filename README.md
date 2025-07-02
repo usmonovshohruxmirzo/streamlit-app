@@ -2,23 +2,23 @@
 
 ## 🔹 EASY
 
-* [ ] Create a Streamlit app that answers basic questions about your fictional or real business:
+* [x] Create a Streamlit app that answers basic questions about your fictional or real business:
 
-  * [ ] Working hours
-  * [ ] Location
-  * [ ] Phone number
-  * [ ] Email address
+  * [x] Working hours
+  * [x] Location
+  * [x] Phone number
+  * [x] Email address
 * [ ] Submit a Word file with screenshots showing how your app works
 
 ## 🔸 NORMAL
 
-* [ ] Complete the Easy task
-* [ ] Add a feature to raise a support ticket (via GitHub, Trello, Jira, etc.) when the answer is not found
+* [x] Complete the Easy task
+* [x] Add a feature to raise a support ticket (via GitHub, Trello, Jira, etc.) when the answer is not found
 * [ ] Submit a Word file with screenshots of your working app, including the support ticket feature
 
 ## 🔺 HARD
 
-* [ ] Complete the Normal task
+* [x] Complete the Normal task
 * [ ] Publish your Streamlit app on Hugging Face Spaces
 * [ ] Submit only a link to your Hugging Face Space
 
