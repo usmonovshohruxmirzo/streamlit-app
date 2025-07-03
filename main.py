@@ -83,7 +83,7 @@ with ask_us_tab:
             answer_text = default_answers["contact"]
         else:
             st.warning("❌ Sorry, we don't have an exact answer for that at the moment.")
-            st.markdown("[🚨 Raise a support ticket here (GitHub Issues)](https://github.com/yourusername/yourrepo/issues/new)", unsafe_allow_html=True)
+            st.markdown("[🚨 Raise a support ticket here (GitHub Issues)](https://github.com/usmonovshohruxmirzo/streamlit-app/issues/new)", unsafe_allow_html=True)
             st.stop()
 
         typed = ""
