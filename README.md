@@ -75,12 +75,13 @@ This project is part of the **IT Park University Internship AI Workshop**. The t
 ### 💬 Ask Us Tab
 
 ![Ask Us](https://github.com/user-attachments/assets/f74c49b0-47c8-4554-91a2-cb23c611a44d)
+![Ask Us](https://github.com/user-attachments/assets/4e182b9e-a8b0-4afe-a35c-0824479f6111)
 
 ---
 
 ### 🚨 GitHub Support Ticket Feature
 
-![Support Ticket](https://github.com/user-attachments/assets/4e182b9e-a8b0-4afe-a35c-0824479f6111)
+![Support Ticket](https://github.com/user-attachments/assets/3d25e695-747e-4b1c-8e67-b295d216d5c2)
 
 ---
 
