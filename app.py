@@ -72,7 +72,11 @@ with ask_us_tab:
         "contact": "Phone: +998 91 339 44 54, Email: shokhrukhmirzo_usmonov@student.itpu.uz."
     }
 
-    if st.button("Submit Question"):
+    if st.button("Submit Question", key="submit_question"):
+        if not question.strip():
+            st.warning("⚠️ Please type a question before submitting.")
+            st.stop()
+            
         with st.spinner("Checking for an answer..."):
             time.sleep(2)
 
