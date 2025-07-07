@@ -52,7 +52,17 @@ with contact_tab:
 
 with ask_us_tab:
     st.header("💬 Ask a Question")
-    question = st.text_area("Type your question here:")
+
+    st.write("💡 **Example questions you can try:**")
+    st.markdown(
+        "- What are your working hours?\n"
+        "- Where is your location?\n"
+        "- What is your phone number?\n"
+        "- What is your email address?\n"
+        "- How can I contact you?"
+    )
+
+    question = st.text_area("Type your question here:", placeholder="e.g., What are your working hours?")
 
     default_answers = {
         "hours": "Our working hours are Monday to Friday: 9 AM – 6 PM, Saturday: 10 AM – 4 PM, Sunday: Closed.",
