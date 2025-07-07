@@ -76,7 +76,7 @@ with ask_us_tab:
         if not question.strip():
             st.warning("⚠️ Please type a question before submitting.")
             st.stop()
-            
+
         with st.spinner("Checking for an answer..."):
             time.sleep(2)
 
@@ -106,3 +106,6 @@ with ask_us_tab:
             typed += char
             placeholder.success(f"💬 {typed}")
             time.sleep(0.02)
+
+st.markdown("---")
+st.caption("Created by `Shokhrukhmirzo Usmonov` for ITPU Internship AI Workshop Project 🧑‍💻")
