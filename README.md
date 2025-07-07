@@ -19,7 +19,7 @@
 ## 🔺 HARD
 
 * [x] Complete the Normal task
-* [ ] Publish your Streamlit app on Hugging Face Spaces
+* [x] Publish your Streamlit app on Hugging Face Spaces
 * [ ] Submit only a link to your Hugging Face Space
 
 ---
